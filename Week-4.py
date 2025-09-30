@@ -25,4 +25,66 @@ my_list2[0] = "Windows 11"
 
 print("Updated List:", my_list2)
 
+# removing an item from our list 
+my_list2.remove("Unix")
+print("List after removing an item:", my_list2)
+del my_list2[2]
+print("List after deleting an item by index:", my_list2)
 
+
+my_numerical_list = [ 1, 2, 4, 1, 2, 5, 6]
+print(my_numerical_list.append(3))
+
+
+print("List after appending an item:", my_numerical_list)
+
+## sort a lit 
+
+my_numerical_list.sort()
+print("Sorted List:", my_numerical_list)
+
+my_numerical_list.reverse()
+print("Reversed List:", my_numerical_list)
+
+
+# [6, 5, 4, 3, 2, 2, 1, 1]
+for item in my_numerical_list:
+    print(item)
+    
+    
+## how to show the length of a list
+print("Length of the list:", len(my_numerical_list))
+
+
+# Concatenating Lists
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+my_combined_list = list1 + list2
+print("Combined List:", my_combined_list)
+
+#Copying Lists
+original_list = ["A", "B", "C"]
+copied_list = original_list.copy()
+print("Copied List:", copied_list)
+
+
+another_copied_list = []
+another_copied_list = another_copied_list + original_list
+print("Another Copied List:", another_copied_list)
+
+
+
+# A sample of power of lists in calculating the average of a list of numbers
+sample_numbers = [10, 20, 30, 40, 50]
+total = sum(sample_numbers) #150 
+count = len(sample_numbers) #5
+average = total / count
+print("Average of the sample numbers:", average)
+
+
+# list can contain different data types and can even include other lists (nested lists)   
+mixed_list = [1, "Hello", 3.14, True, None, [1, 2, 3], [4,5], [6,7,8]]
+print("Mixed List:", mixed_list)
+
+print(type(mixed_list[5])) 
